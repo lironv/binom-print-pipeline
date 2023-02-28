@@ -13,7 +13,7 @@ def binom(n):
             print('\033[90m', end="")
         else:
             print('\033[94m', end="")
-        coef = math.comb(n, i)
+        coef = math.comb(1, i)
         print(coef, end=" ")
     print('\033[0m')
 
