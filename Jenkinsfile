@@ -2,14 +2,12 @@ pipeline {
     agent any
     
     stages {
-        stage('Checkout') {
-            steps {
-                git branch: 'main', url: 'https://github.com/lironv/binom-print-pipeline.git'
-            }
-        }
+       
 
         stage('Execute Newton binom') {
             steps {
+                git branch: 'main', url: 'https://github.com/lironv/binom-print-pipeline.git'
+
                 sh 'python binom.py ${params.num}'
             }
         }
