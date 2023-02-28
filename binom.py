@@ -16,5 +16,5 @@ def newton_binom(num):
             print(f"{i}: {comb(num, i):,}")
             
     
-newton_binom(num)
+newton_binom(5)
 
