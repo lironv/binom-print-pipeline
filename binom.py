@@ -17,6 +17,4 @@ def newton_binom(n):
                 row.append('\033[94m{}\033[0m'.format(coef))
         print(' '.join(row).center(n*4))
 
-# Prompt the user for input and call the function
-n = int(input('Enter the number of rows for the Newton binomial triangle: '))
 newton_binom(n)
