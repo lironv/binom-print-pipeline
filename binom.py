@@ -1,4 +1,6 @@
 from math import comb
+import sys 
+
 
 def newton_binom(num):
     try:
