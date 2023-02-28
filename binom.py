@@ -1,4 +1,4 @@
-from math import comb
+import math
 
 def newton_binom(num):
     try:
@@ -14,4 +14,7 @@ def newton_binom(num):
             print(f"{i}: {comb(num, i):,}")
         else:
             print(f"{i}: {comb(num, i):,}")
+            
+    
+newton_binom(num)
 
